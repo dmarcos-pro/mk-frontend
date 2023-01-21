@@ -4,12 +4,12 @@ Ce test a pour but d'évaluer tes connaissances en JavaScript, [ReactJS](https:/
 et [Typescript](https://github.com/microsoft/TypeScript). Tu devras réaliser une application permettant l'édition de
 bannières de publicité.
 
-Le projet est bootstrappé avec [Create React App](https://github.com/facebook/create-react-app).
+Le projet utilise [Vite](https://vitejs.dev/).
 
 L'utilisation des bibliothèques suivantes est attendue :
 
 - [material-ui](https://github.com/mui-org/material-ui)
-- [react-query](https://github.com/tannerlinsley/react-query)
+- [react-query](https://github.com/TanStack/query)
 - [react-router](https://github.com/remix-run/react-router)
 
 ## Mockups
@@ -60,11 +60,9 @@ Quelques exemples de paramètres fournis par l'API :
 
 ## Commandes
 
-Pour démarrer le projet : `yarn start`
+Pour démarrer le projet : `yarn dev`
 
 Démarre l'application en mode développement.
-
-URL : [http://localhost:3000](http://localhost:3000)
 
 Pour lancer les tests : `yarn test`
 
