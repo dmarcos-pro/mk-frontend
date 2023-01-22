@@ -33,7 +33,6 @@ rules:
     - argsIgnorePattern: '^_'
       ignoreRestSiblings: true
   '@typescript-eslint/no-unnecessary-condition': warn
-  no-duplicate-imports: error
   import/order:
     - warn
     - groups:
@@ -48,10 +47,6 @@ rules:
     - warn
     - 120
     - 2
-  object-curly-newline: off
-  consistent-return: off
-  arrow-body-style: off
-  arrow-parens: off
   no-console:
     - warn
     - allow:
@@ -65,8 +60,6 @@ rules:
     - error
     - single
     - avoidEscape: true
-  import/no-named-as-default: off
-  import/no-named-as-default-member: off
   tss-unused-classes/unused-classes: warn
   prefer-template: error
   no-useless-concat: error
