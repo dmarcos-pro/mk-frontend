@@ -1,22 +1,18 @@
 import React from 'react';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+
+import Ads from './containers/ads';
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <Ads />,
+  }
+]);
 
 function App() {
   return (
-    <>
-      <header
-        style={{
-          marginTop: 16,
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
-        }}
-      >
-        <img src="/mediakeys.png" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-      </header>
-    </>
+    <RouterProvider router={router} />
   );
 }
 
