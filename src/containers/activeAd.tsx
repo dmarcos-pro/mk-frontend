@@ -66,8 +66,7 @@ const ActiveAd = (props: ActiveAdProps) => {
       </Box>
       <Button
         variant="contained" sx={{ marginTop: '20px' }}
-        onClick={() => { props.handleModifyAd(props.activeAd); }}
-      >
+        onClick={() => { props.handleModifyAd(props.activeAd); }}>
         Éditer
       </Button>
     </Box>
