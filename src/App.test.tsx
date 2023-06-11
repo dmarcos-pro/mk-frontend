@@ -100,8 +100,7 @@ test('Switch Button Test', () => {
   const handleSwitchMock = vitest.fn();
 
   render(
-    <Switch checked={true} onChange={() => handleSwitchMock('argument1', 'argument2')}
-    />
+    <Switch checked={true} onChange={() => handleSwitchMock('argument1', 'argument2')} />
   );
 
   const switchButton = screen.getByRole('checkbox');
