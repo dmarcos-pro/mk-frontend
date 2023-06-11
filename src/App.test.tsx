@@ -2,7 +2,7 @@ import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
 import axios from 'axios';
 import MockAdapter from 'axios-mock-adapter';
-import { Button } from '@mui/material';
+import { Button, Switch } from '@mui/material';
 
 
 describe('Server Response Test', () => {
@@ -94,4 +94,20 @@ test('CTA Sauvegarder Test', () => {
   fireEvent.click(saveButton);
 
   expect(handleSaveMock).toHaveBeenCalled();
+});
+
+test('Switch Button Test', () => {
+  const handleSwitchMock = vitest.fn();
+
+  render(
+    <Switch checked={true} onChange={() => handleSwitchMock('argument1', 'argument2')}
+    />
+  );
+
+  const switchButton = screen.getByRole('checkbox');
+  expect(switchButton).toBeInTheDocument();
+
+  fireEvent.click(switchButton);
+
+  expect(handleSwitchMock).toHaveBeenCalled();
 });
